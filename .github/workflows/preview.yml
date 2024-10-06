@@ -21,3 +21,5 @@ jobs:
           preview-branch: main
           umbrella-dir: public/pr-preview
           action: auto
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
