@@ -27,3 +27,4 @@ jobs:
         with:
           source-dir: ./public
           preview-branch: main
+          umbrella-dir: public/pr-preview
