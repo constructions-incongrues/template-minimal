@@ -17,7 +17,9 @@ jobs:
         if: github.event.action != 'closed'
       - uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: .
+          source-dir: ./public
           preview-branch: main
           umbrella-dir: public/pr-preview
           action: auto
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
